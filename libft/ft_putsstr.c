@@ -1,28 +1,26 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_lstnew.c                                      .::    .:/ .      .::   */
+/*   ft_putsstr.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: fleonard <marvin@le-101.fr>                +:+   +:    +:    +:+     */
+/*   By: fleonard <fleonard@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2018/10/08 10:25:30 by fleonard     #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/22 16:12:04 by fleonard    ###    #+. /#+    ###.fr     */
+/*   Created: 2018/11/09 19:55:38 by fleonard     #+#   ##    ##    #+#       */
+/*   Updated: 2018/11/09 20:01:49 by fleonard    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void const *content, size_t content_size)
+void	ft_putsstr(char **str)
 {
-	t_list	*new;
+	int		i;
 
-	if (!(new = (t_list *)malloc(sizeof(*new))))
-		return (NULL);
-	new->next = NULL;
-	new->content_size = content ? content_size : 0;
-	new->content = content ? ft_memalloc(content_size + 1) : NULL;
-	if (content)
-		ft_memcpy(new->content, content, content_size);
-	return (new);
+	i = 0;
+	while (str[i++])
+	{
+		ft_putstr(str[i]);
+		ft_putchar('\n');
+	}
 }

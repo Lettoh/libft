@@ -6,7 +6,7 @@
 #    By: fleonard <fleonard@student.le-101.fr>      +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/10/02 12:10:20 by fleonard     #+#   ##    ##    #+#        #
-#    Updated: 2018/10/18 13:11:28 by fleonard    ###    #+. /#+    ###.fr      #
+#    Updated: 2018/11/09 20:00:59 by fleonard    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -83,7 +83,8 @@ SRC = ft_putchar.c\
 	  ft_strcapitalize.c\
 	  ft_swap.c\
 	  ft_strndup.c\
-	  ft_getfirstword.c
+	  ft_getfirstword.c\
+	  ft_putsstr.c
 
 OBJ = $(subst .c,.o,$(SRC))
 

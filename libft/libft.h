@@ -6,7 +6,7 @@
 /*   By: fleonard <fleonard@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/08 17:37:27 by fleonard     #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/18 13:12:32 by fleonard    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/11/09 20:02:10 by fleonard    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -92,5 +92,6 @@ void				ft_swap(int *a, int *b);
 char				*ft_strcapitalize(char *str);
 char				*ft_strndup(const char *s, size_t n);
 char				*ft_getfirstword(const char *str);
+void				ft_putsstr(char **str);
 
 #endif
